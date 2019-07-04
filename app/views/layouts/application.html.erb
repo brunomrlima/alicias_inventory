@@ -2,15 +2,22 @@
 <html>
 <%= favicon_link_tag asset_path('favicon.ico'), :rel => 'icon', :type =>  'image/ico' %>
   <head>
-    <title>AliciasInventory</title>
+    <title><%= full_title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="description" content="Alicia's inventory was made to organize tools for any company">
+    <meta name="author" content="Bruno Monteiro Rocha Lima">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
 
   <body>
+    <%= render 'layouts/header' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
