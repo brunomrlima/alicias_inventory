@@ -6,3 +6,48 @@
   margin-top: 5px;
   margin-left: 10px;
 }
+
+body {
+  height: 100vh;
+  background: #333 url('https://media.giphy.com/media/uLgdT2xnPIxlS/giphy.gif') no-repeat center center / cover;
+  color: #ccc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+.txt-type > .txt {
+  border-right: 0.1rem solid #F7F7F7;
+}
+
+
+@media(min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media(max-width: 800px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
