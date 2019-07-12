@@ -1,3 +1,4 @@
+$black: #161616 !default;
 .main_logo {
   padding-left: 1.5rem;
   vertical-align: middle;
@@ -13,7 +14,7 @@
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: url('https://media.giphy.com/media/uLgdT2xnPIxlS/giphy.gif');
+  background: linear-gradient(to bottom, #{fade-out($black, 1)} 0%,#{fade-out($black, 0.5)} 100%,$black 100%), url('https://media.giphy.com/media/uLgdT2xnPIxlS/giphy.gif');;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
