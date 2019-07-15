@@ -1,0 +1,7 @@
+language: ruby
+notifications:
+  email:
+    recipients:
+      - bruno.mrlima@gmail.com
+#    on_success: never # default: change
+#    on_failure: always # default: always
